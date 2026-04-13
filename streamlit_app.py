@@ -1,7 +1,18 @@
-cd "c:\Users\akaps\OneDrive\Desktop\ASD" ; git init ; git add . ; git commit -m "Deploy" ; git branch -M main ; git push -f https://kapse91-repo:ghp_Ql0zBNomc09wGT62XaaXxa0XNdBTZf3fCjC5@github.com/kapse91-repo/asd-prediction-system.git main
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+st.set_page_config(
+    page_title="ASD Prediction System",
+    page_icon="B",
+    layout="wide"
 )
+
+st.title("ASD Prediction System")
+st.write(
+    "Welcome to the ASD Prediction System. Please use the sidebar to navigate through the application."
+)
+
+st.sidebar.success("Select a page above.")
+
+if st.button("Run AI Analysis"):
+    st.info("AI Analysis started...")
+    # Add your logic here
